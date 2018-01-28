@@ -1,0 +1,204 @@
+.central-eservices .item_1 a {
+	animation: blinker 1s linear infinite;
+	color: red;
+}
+
+@
+keyframes blinker { 50% {
+	opacity: 0;
+}
+
+}
+#domain-list {
+	padding: 5px;
+}
+
+#inputs>select, #inputs>input {
+	float: left;
+	margin: 0 5px;
+	padding: 0;
+	width: 100px;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	display: inline;
+	font-size: 0.9em;
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+.cabinet-portal-gov-bd .meganizr>li>a {
+	font-size: 20px
+}
+
+#domain-selector-panel {
+	height: auto;
+	min-height: 30px;
+	padding: 10px 0;
+}
+
+.domain-selector {
+	width: 250px;
+	margin: 0 auto;
+}
+
+.slide-panel {
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 5px;
+	position: absolute;
+}
+
+.content {
+	z-index: 1000;
+	overflow: hidden;
+	text-align: left;
+	background-color: #343434;
+	height: 0;
+	width: 100%;
+	color: #fff;
+}
+
+.slide-panel-button {
+	position: relative;
+	width: 190px;
+	z-index: 20;
+	cursor: pointer;
+	height: auto;
+	padding: 0 5px;
+	text-align: left;
+}
+
+.slide-panel-button:hover {
+	color: #9f9d8e;
+}
+
+.slide-panel-button {
+	cursor: pointer;
+	color: #fff;
+	background-color: #333;
+}
+
+.slide-panel-button:hover {
+	color: #9f9d8e;
+}
+
+.slide-panel-btns {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.cabinet-portal-gov-bd .mainwrapper .box img {
+	width: 100px
+}
+
+@media only screen and (min-width:320px ) and (max-width:979px) {
+	#jmenu .mzr-responsive {
+		display: none;
+	}
+	#jmenu li.mzr-drop a.mzr-content {
+		top: 0
+	}
+}
+
+.footer-credit {
+	float: right;
+	font-size: .8em;
+	margin: 40px 20px 0 0;
+	text-align: right;
+}
+
+.footer-credit ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-credit ul li, a, a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+.footer-credit ul li a:hover {
+	text-decoration: underline;
+}
+
+#footer-menu {
+	float: left;
+	margin: 40px 0 0 20px;
+}
+
+#footer-menu ul li {
+	float: left;
+	border-left: solid 1px #ccc;
+}
+
+#footer-menu ul li:first-child {
+	border-left: solid 1px #eee;
+}
+
+#footer-menu ul li a {
+	padding: 5px;
+	color: #000;
+}
+
+#footer-menu ul li a:hover {
+	color: #fff;
+	background: #000;
+}
+
+@media only screen and (max-width: 767px) , only screen and
+	(max-device-width: 767px) {
+	#div-lang>form {
+		display: none
+	}
+	.meganizr li.col3 {
+		display: none
+	}
+	.slide-panel-button .flaticon-menu10 {
+		display: none;
+	}
+	.slide-panel-button, .slide-panel-button:hover {
+		cursor: default;
+		color: #fff;
+	}
+	.slide-panel-button {
+		margin-top: 2px;
+		font-size: 14px;
+	}
+}
+
+.slide-panel-button {
+	width: 250px !important;
+}
+
+.cabinet-portal-gov-bd .meganizr>li>a {
+	font-size: 20px
+}
+
+.ad-next, .ad-prev {
+	z-index: 10 !important
+}
+
+.service-box {
+	z-index: 10;
+	cursor: inherit !important;
+}
+
+input[type="number"] {
+	border: 1px solid #ccc;
+    padding: 6px 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    margin: 0;
+    width: 250px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    background: #fff;
+}
