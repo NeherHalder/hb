@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
-    <title> {{ language('Hall/Seminar Room Booking', 'হল/সেমিনার কক্ষ ভাড়া') }} | গণগ্রন্থাগার অধিদপ্তর</title>
+    <title> {{ language('Gallery/Auditorium  Booking', 'গ্যালারি/িমলনায়ত কক্ষ ভাড়া') }} | বাংলােদশ জাতীয় জাদুঘর</title>
 	<!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -152,18 +152,24 @@
 			<div class="callbacks_container"
 				style="box-shadow: 0 1px 5px #999999;">
 				<ul class="rslides" id="front-image-slider">
+					<li>
+						<img src="{{ asset('img/pic4.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>
+						<p class="caption">{{config('app.name')}}</p>           		
+					</li>
+
 					<li>     	
 						<img src="{{ asset('img/pic2.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>     	
-						<p class="caption">গণগ্রন্থাগার অধিদপ্তর - হল/সেমিনার কক্ষ</p>	
+						<p class="caption">{{config('app.name')}} - {{ getRoom('shoukot-osman') }}</p>	
 					</li>
+					
 					<li>
 						<img src="{{ asset('img/pic3.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>  
-						<p class="caption">গণগ্রন্থাগার অধিদপ্তর - হল/সেমিনার কক্ষ</p>     		
+						<p class="caption">{{config('app.name')}} - {{ getRoom('second-floor') }}</p>    		
 					</li>
-                    <li>
+                    				<li>
 						<img src="{{ asset('img/pic1.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>
-						<p class="caption">গণগ্রন্থাগার অধিদপ্তর - হল/সেমিনার কক্ষ</p>           		
-					</li>
+						<p class="caption">{{config('app.name')}} - {{ getRoom('second-floor') }}</p>           		
+					</li>					
 				</ul>        
 			</div>
 

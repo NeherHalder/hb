@@ -3,8 +3,8 @@
 function getRoom($key)
 {
     $arr = [
-        'shoukot-osman'  => language('Shoukot Osman Seminar Room', 'শওকত ওসমান স্মৃতি মিলনায়তন'),
-        'second-floor'  => language('Second Floor Conference Room', 'দ্বিতীয় তলা সেমিনার কক্ষ'),
+        'shoukot-osman'  => language('Sufia Kamal Auditorium', 'কবি সুফিয়া কামাল মিলনায়তন'),
+        'second-floor'  => language('Second Floor Conference Room', 'নলিনীকান্ত ভট্টশালী প্রদর্শনী গ্যালারি'),
         'ground-floor' => language('Ground Floor Seminar Room', 'নীচতলা সেমিনার কক্ষ')
     ];
     return $arr[$key];
