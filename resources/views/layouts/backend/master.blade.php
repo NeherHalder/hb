@@ -7,7 +7,7 @@
 		@if(Auth::check())
 		 {{ Auth::user()->role == 'admin' ? 'Admin' : 'Super Admin' }} Area ({{ Auth::user()->name }})
 		@else
-			Hall Booking | গণগ্রন্থাগার অধিদপ্তর
+			Hall Booking | {{config('app.name')}}
 		@endif
 	</title>
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">

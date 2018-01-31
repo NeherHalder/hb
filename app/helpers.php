@@ -3,9 +3,9 @@
 function getRoom($key)
 {
     $arr = [
-        'shoukot-osman'  => language('Sufia Kamal Auditorium', 'কবি সুফিয়া কামাল মিলনায়তন'),
-        'second-floor'  => language('Second Floor Conference Room', 'নলিনীকান্ত ভট্টশালী প্রদর্শনী গ্যালারি'),
-        'ground-floor' => language('Ground Floor Seminar Room', 'নীচতলা সেমিনার কক্ষ')
+        'sufia-kamal'  => language('Sufia Kamal Auditorium', 'কবি সুফিয়া কামাল মিলনায়তন'),
+        'nolinikanto-vottoshali'  => language('Nolinikanto Vottoshali Gallery', 'নলিনীকান্ত ভট্টশালী প্রদর্শনী গ্যালারি'),
+        'main-auditorium' => language('Main Auditorium', 'প্রধান মিলনায়তন')
     ];
     return $arr[$key];
 }
@@ -13,9 +13,9 @@ function getRoom($key)
 function getCapacity($key)
 {
     $arr = [
-        'shoukot-osman'  => 300,
-        'second-floor'   => 250,
-        'ground-floor'   => 250
+        'sufia-kamal'  => 300,
+        'nolinikanto-vottoshali'   => 250,
+        'main-auditorium'   => 250
     ];
     return $arr[$key];
 }
@@ -88,9 +88,9 @@ function allReasons()
 function allRoomTypes()
 {
     return [
-        'shoukot-osman'  => language('Shoukot Osman Seminar Room', 'শওকত ওসমান স্মৃতি মিলনায়তন'),
-        'second-floor'  => language('Second Floor Conference Room', 'দ্বিতীয় তলা সেমিনার কক্ষ'),
-        'ground-floor' => language('Ground Floor Seminar Room', 'নীচতলা সেমিনার কক্ষ')
+        'sufia-kamal'  => language('Sufia Kamal Auditorium', 'কবি সুফিয়া কামাল মিলনায়তন'),
+        'nolinikanto-vottoshali'  => language('Second Floor Conference Room', 'নলিনীকান্ত ভট্টশালী প্রদর্শনী গ্যালারি'),
+        'main-auditorium' => language('Main Auditorium', 'প্রধান মিলনায়তন')
     ];
 }
 

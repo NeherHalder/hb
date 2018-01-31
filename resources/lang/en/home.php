@@ -1,7 +1,7 @@
 <?php 
 
 return [
-	'welcome' => 'Welcome to Department of Public Libraries',
+	'welcome' => 'Welcome to Bangladesh National Museum',
 	'communication' => [
 		'title' => 'Communication',
 		'ministry' => 'Ministry of Cultural Affairs',
@@ -28,6 +28,6 @@ return [
 		'send_btn'=> 'Send Message'
 	],
 	'venues' => [
-		'title' => 'Hall & Seminar rooms of Begum Sufiya Kamal Public Library'
+		'title' => 'Gallery & Seminar rooms of Bangladesh National Museum'
 	]
 ];

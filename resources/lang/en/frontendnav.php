@@ -1,7 +1,7 @@
 <?php 
 
 return [
-	'title' => 'Department of Public Libraries',
+	'title' => 'Bangladesh National Museum',
 	'bdnp' => 'Bangladesh National Portal',
 	'homepage' => 'Home page',
 	'aboutUs'  => 'About us',

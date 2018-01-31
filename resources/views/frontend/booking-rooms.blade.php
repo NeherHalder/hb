@@ -27,8 +27,8 @@
 		<div class="room-sec">
             <a href="#"><img src="{{ asset('img/pic1.jpg') }}" alt=""/></a>
             <h4>
-            	<a href="{{ url('booking-rooms/shoukot-osman') }}" title="{{ language('Details', 'বিস্তারিত') }}">
-            		শওকত ওসমান স্মৃতি মিলনায়তন
+            	<a href="{{ url('booking-rooms/sufia-kamal') }}" title="{{ language('Details', 'বিস্তারিত') }}">
+            		{{getRoom('sufia-kamal')}}
             	</a>
             </h4>
         </div>
@@ -37,7 +37,7 @@
             <a href="#"><img src="{{ asset('img/pic3.jpg') }}" alt=""/></a>
             <h4>
             	<a href="{{ url('booking-rooms/ground-floor') }}" title="{{ language('Details', 'বিস্তারিত') }}">
-            		সেমিনার রুম(প্রথম তলা)
+            		{{getRoom('main-auditorium')}}
             	</a>	
             </h4>
         </div>
@@ -46,8 +46,8 @@
             <a href="#"><img src="{{ asset('img/pic2.jpg') }}" alt=""/>
             </a>
             <h4>
-            	<a href="{{ url('booking-rooms/second-floor') }}" title="{{ language('Details', 'বিস্তারিত') }}">
-            		গ্রাউন্ড ফ্লোর সেমিনার রুম
+            	<a href="{{ url('booking-rooms/nolinikanto-vottoshali') }}" title="{{ language('Details', 'বিস্তারিত') }}">
+            		{{getRoom('nolinikanto-vottoshali')}}
             	</a>
             </h4>
         </div>

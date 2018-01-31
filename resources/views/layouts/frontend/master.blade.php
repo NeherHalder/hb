@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
-    <title> {{ language('Gallery/Auditorium  Booking', 'গ্যালারি/িমলনায়ত কক্ষ ভাড়া') }} | বাংলােদশ জাতীয় জাদুঘর</title>
+    <title> {{ language('Gallery/Auditorium  Booking', 'গ্যালারি/মিলনায়তন কক্ষ ভাড়া') }} | বাংলােদশ জাতীয় জাদুঘর</title>
 	<!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,7 +69,9 @@
 	<script src="{{ asset('js/jquery.datepick.js') }}"></script>
 	@if(Request::segment(1) == 'booking-rooms')
 		<style>
-			.container { margin-top: -20px; }
+			.container { margin-top: -20px;
+			box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			 }
 		</style>
 	@endif
 </head>
@@ -83,10 +85,10 @@
 						<i class="flaticon-menu10"></i> <a style="color: white"
 							href="http://www.bangladesh.gov.bd/" target="_blank">{{ __('frontendnav.bdnp') }}</a>
 					</div>
-					<div class="slide-panel-button" id="close-button"
+					<!-- <div class="slide-panel-button" id="close-button"
 						style="display: none;">
 						<i class="flaticon-cross5"></i>বাংলাদেশ জাতীয় তথ্য বাতায়ন
-					</div>
+					</div> -->
                 </div>
 				<div id="div-lang"
 					style="padding: 0; position: absolute; right: 0; top: 0; margin-top: 1px; width: 405px;">
@@ -152,23 +154,23 @@
 			<div class="callbacks_container"
 				style="box-shadow: 0 1px 5px #999999;">
 				<ul class="rslides" id="front-image-slider">
-					<li>
+					<!-- <li>
 						<img src="{{ asset('img/pic4.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>
 						<p class="caption">{{config('app.name')}}</p>           		
-					</li>
+					</li> -->
 
 					<li>     	
-						<img src="{{ asset('img/pic2.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>     	
-						<p class="caption">{{config('app.name')}} - {{ getRoom('shoukot-osman') }}</p>	
+						<img src="{{ asset('img/pic1.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>     	
+						<p class="caption">{{config('app.name')}} - {{ getRoom('sufia-kamal') }}</p>	
 					</li>
 					
 					<li>
 						<img src="{{ asset('img/pic3.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>  
-						<p class="caption">{{config('app.name')}} - {{ getRoom('second-floor') }}</p>    		
+						<p class="caption">{{config('app.name')}} - {{ getRoom('main-auditorium') }}</p>    		
 					</li>
                     				<li>
-						<img src="{{ asset('img/pic1.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>
-						<p class="caption">{{config('app.name')}} - {{ getRoom('second-floor') }}</p>           		
+						<img src="{{ asset('img/pic2.jpg') }}" alt="" width="960" height="220" style="position: relative; width: 960px; height: 220px;"/>
+						<p class="caption">{{config('app.name')}} - {{ getRoom('nolinikanto-vottoshali') }}</p>           		
 					</li>					
 				</ul>        
 			</div>
@@ -231,16 +233,13 @@
 						<div class="mzr-content drop-one-columns">
 							<div class="one-col"><h6></h6>
 								<ul class="mzr-links">
-									<li>
-										<a target="_blank" href="{{ url('booking-room/shoukot-osman') }}" title="সাবমেনুর জন্য ক্লিক করুন">
-											{{ language('Rules for Shoukot Osman Seminar Room Booking', 'শওকত ওসমান স্মৃতি মিলনায়তন ভাড়ার নীতিমালা') }}
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="{{ url('booking-room/seminar-room') }}" title="সাবমেনুর জন্য ক্লিক করুন">
-											{{ language('Rules for Seminar Room Booking', 'সেমিনার কক্ষ ভাড়ার নীতিমালা') }}
-										</a>
-									</li>	
+																	
+
+									@foreach(allRoomTypes() as $key => $value)
+										<a target="_blank" href="{{ url("booking-room/{$key}") }}" title="সাবমেনুর জন্য ক্লিক করুন">
+											{{ $value }}
+										</a>										
+									@endforeach	
 								</ul>
 							</div>
 						</div>
@@ -259,7 +258,7 @@
 
 		<div id="contents" class="sixteen columns">
 			<div class="row mainwrapper">
-				<div class="row" id="notice-board">
+				<div class="row" id="notice-board" style="box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 					@yield('main-content')
 				</div>
 			</div>
@@ -292,18 +291,20 @@
 	        </div>
 
 			<div class="footer-credit" id="footer">
-	                <p>
+	                		<!-- <p>
 					পরিকল্পনা ও বাস্তবায়নে:&nbsp;<a href="http://www.cabinet.gov.bd/">মন্ত্রিপরিষদ
 						বিভাগ</a>,&nbsp;<a href="http://www.a2i.pmo.gov.bd/">এটুআই</a>,&nbsp;<a
 						href="http://www.bcc.net.bd/">বিসিসি</a>&nbsp;ও&nbsp;<a
 						href="http://www.basis.org.bd/">বেসিস</a>।
-				</p>
+				</p> -->
 
-				<p>
-					কারিগরি সহায়তায়:<a href="http://www.a2i.pmo.gov.bd/"><img
+				<p style="font-size: 16px;">
+					<!-- কারিগরি সহায়তায়:<a href="http://www.a2i.pmo.gov.bd/"><img
 						style="height: 45px; vertical-align: middle; width: 150px"
 						src="{{ asset('/images/pmologo.png') }}"
-						alt=""></a>
+						alt=""></a> -->
+
+						কারিগরি সহায়তায়: <a href="http://jtcsolutionsbd.com/"><span style="color: red;"> JTC</span><span style="color: green"> Solutions</span></a>
 				</p>
 			</div>
 			<!-- /footer -->

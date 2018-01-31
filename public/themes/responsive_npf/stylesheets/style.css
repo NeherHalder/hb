@@ -87,7 +87,7 @@
 }
 @media only screen and (min-width: 960px) {
 	body{
-		background: url("../images/bg_main.gif") repeat-y scroll center top rgba(0, 0, 0, 0);
+		background: url("../images/bg_main.gif") repeat scroll center top rgba(0, 0, 0, 0);
 	}
 	.footer-artwork {
 		background: url("../images/footer_top_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
