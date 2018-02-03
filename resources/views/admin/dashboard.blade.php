@@ -35,7 +35,7 @@
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>
-                            {{ entobn(array_key_exists('shoukot-osman', $bookings->get()) ? $bookings->get()['shoukot-osman'] : 0) }}
+                            {{ entobn(array_key_exists('গ্যালারি', $bookings->get()) ? $bookings->get()['গ্যালারি'] : 0) }}
                         </h3>
                         <p>
                             বুকিং
@@ -44,8 +44,8 @@
                     <div class="icon" style="top: 0px; border: none; right: 12px;">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{ url('admin/booking-management?room=shoukot-osman') }}" class="small-box-footer">
-                        শওকত ওসমান মিলনায়তন <i class="fa fa-arrow-circle-right"></i>
+                    <a href="{{ url('admin/booking-management?room=sufia-kamal') }}" class="small-box-footer">
+                        কবি সুফিয়া কামাল মিলনায়তন <i class="fa fa-arrow-circle-right"></i>
                     </a>
                 </div>
             </div><!-- ./col -->
@@ -54,7 +54,7 @@
                 <div class="small-box bg-yellow">
                     <div class="inner">
                         <h3>
-                            {{ entobn(array_key_exists('second-floor', $bookings->get()) ? $bookings->get()['second-floor'] : 0) }}
+                            {{ entobn(array_key_exists('nolinikanto-vottoshali', $bookings->get()) ? $bookings->get()['nolinikanto-vottoshali'] : 0) }}
                         </h3>
                         <p>
                             বুকিং
@@ -63,8 +63,8 @@
                     <div class="icon" style="top: 0px; border: none; right: 12px;">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{ url('admin/booking-management?room=second-floor') }}" class="small-box-footer">
-                        দ্বিতীয় তলা সেমিনার কক্ষ <i class="fa fa-arrow-circle-right"></i>
+                    <a href="{{ url('admin/booking-management?room=nolinikanto-vottoshali') }}" class="small-box-footer">
+                        নলিনীকান্ত ভট্টশালী প্রদর্শনী গ্যালারি<i class="fa fa-arrow-circle-right"></i>
                     </a>
                 </div>
             </div><!-- ./col -->
@@ -73,7 +73,7 @@
                 <div class="small-box bg-red">
                     <div class="inner">
                         <h3>
-                            {{ entobn(array_key_exists('ground-floor', $bookings->get()) ? $bookings->get()['ground-floor'] : 0) }}
+                            {{ entobn(array_key_exists('main-auditorium', $bookings->get()) ? $bookings->get()['main-auditorium'] : 0) }}
                         </h3>
                         <p>
                             বুকিং
@@ -82,8 +82,8 @@
                     <div class="icon" style="top: 0px; border: none; right: 12px;">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{ url('admin/booking-management?room=ground-floor') }}" class="small-box-footer">
-                        নীচতলা সেমিনার কক্ষ <i class="fa fa-arrow-circle-right"></i>
+                    <a href="{{ url('admin/booking-management?room=main-auditorium') }}" class="small-box-footer">
+                        প্রধান মিলনায়তন <i class="fa fa-arrow-circle-right"></i>
                     </a>
                 </div>
             </div><!-- ./col -->

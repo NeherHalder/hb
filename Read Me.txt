@@ -1,0 +1,25 @@
+##Permition Folders: 
+  ------------------
+
+	1. bootstrap/cache
+	2. storage/framework > All Sub Folders
+	3. storage/logs
+
+## Create a database name = social_welfare
+
+## Change .env file credentials.
+
+	1. DB_DATABASE=
+
+	2. DB_USERNAME=
+
+	3. DB_PASSWORD=
+
+
+	Ex.
+
+	1. DB_DATABASE=social_welfare
+
+	2. DB_USERNAME=neher
+
+	3. DB_PASSWORD=123456

@@ -15,7 +15,7 @@
     	<p class="menu-link{{ Request::segment(2) == 'booking-management' ? ' active' : '' }}">
 			<strong>
 				<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;
-				<a href="{{ url('admin/booking-management') }}">{{ language('Hall/Seminar Room Booking', 'হল/সেমিনার কক্ষ বুকিং') }}</a>
+				<a href="{{ url('admin/booking-management') }}">{{ language('Hall/Seminar Room Booking', 'গ্যালারি/সেমিনার কক্ষ বুকিং') }}</a>
 			</strong>
 		</p>
 		<p class="menu-link{{ Request::segment(2) == 'messages' ? ' active' : '' }}">

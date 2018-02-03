@@ -7,19 +7,19 @@
 @section('main-content')
 <div class="column block">
     <h5 class="bk-org title">
-        {{ language('Fill out the below form properly to book Hall/Seminar Room', 'হল/সেমিনার রুম ভাড়ার জন্য নিম্নের তথ্যসমূহ সঠিকভাবে পূরণ করুন') }}
+        {{ language('Fill out the below form properly to book Gallery/Seminar Room', 'গ্যালারি/সেমিনার রুম ভাড়ার জন্য নিম্নের তথ্যসমূহ সঠিকভাবে পূরণ করুন') }}
     </h5>
     <p>&nbsp;</p>
     <div style="margin-left: 16px;">
         <div style="margin-bottom: 10px; border-bottom: 1px solid #e3e3e3;padding-bottom: 14px;margin-right: 30px;">
-            <strong>হল/সেমিনার রুম ভাড়া সংক্রান্ত গুরুত্বপূর্ণ তথ্য</strong>
+            <strong>গ্যালারি/সেমিনার রুম ভাড়া সংক্রান্ত গুরুত্বপূর্ণ তথ্য</strong>
             <p><strong> প্রথম বার্তা: </strong> ফর্ম পূরণ করার পরে।</p>
             <p><strong>দ্বিতীয় বার্তা:</strong> পে অর্ডার (নিরাপত্তা অর্থ) সহ আবেদন জমা দেওয়ার পরে।</p>
-            <p><strong>তৃতীয় বার্তা:  </strong> অ্যাডমিন অনুমোদিত হওয়ার পরে, অনুমোদিত চিঠিটি উল্লিখিত সময়ের মধ্যে একটি পৃথক পে অর্ডারের মাধ্যমে আপনি ভাড়া এবং ভ্যাট জমা দেওয়ার জন্য অনুরোধ করা হল।</p>
+            <p><strong>তৃতীয় বার্তা:  </strong> অ্যাডমিন অনুমোদিত হওয়ার পরে, অনুমোদিত চিঠিটি উল্লিখিত সময়ের মধ্যে একটি পৃথক পে অর্ডারের মাধ্যমে আপনি ভাড়া এবং ভ্যাট জমা দেওয়ার জন্য অনুরোধ করা হল</p>
         </div>
         @if(session()->has('collition'))
             <div style="margin-bottom: 10px; border-bottom: 1px solid #e3e3e3; padding-bottom: 9px; font-style: italic; color: darkred;font-size: 1.2em;">
-                আপনার প্রদত্ত দিনসমূহে হল/সেমিনার রুমের বুকিং সম্ভব নয় | উক্ত সময়ে বুকিং আছে | নিচে বুকিংসমূহের বিস্তারিত দেখুন |
+                আপনার প্রদত্ত দিনসমূহে গ্যালারি/সেমিনার রুমের বুকিং সম্ভব নয় | উক্ত সময়ে বুকিং আছে | নিচে বুকিংসমূহের বিস্তারিত দেখুন |
             </div>
         @endif
         <form method="POST" action="">
@@ -46,9 +46,9 @@
                             @endif
                         </td>
                         <td style="width: 50%;">
-                            <label for="hall_room">{{ language('Hall/Seminar Room', 'হল / সেমিনার রুম') }}</label>
+                            <label for="hall_room">{{ language('Hall/Seminar Room', 'গ্যালারি / সেমিনার রুম') }}</label>
                             <select name="hall_room" id="hall_room" style="width: 92%; height: 32px;">
-                                <option value="">{{language('Select Hall/Seminar Room','হল/সেমিনার রুম সিলেক্ট করুন')}}</option>
+                                <option value="">{{language('Select Hall/Seminar Room','গ্যালারি/সেমিনার রুম সিলেক্ট করুন')}}</option>
                                 @foreach(allRoomTypes() as $key => $value)
                                     <option value="{{ $key }}" 
                                     {{ (old('hall_room') == $key) || (Request::input('room') == $key) ? 'selected' : '' }}

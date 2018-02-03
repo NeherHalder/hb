@@ -14,7 +14,7 @@
 -- Dumping structure for table hb.bookings
 CREATE TABLE IF NOT EXISTS `bookings` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `reg_no` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reg_no` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `reason` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `hall_room` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   `main_guest` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `chair_of_the_event` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `applicant_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nid_no` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `id_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nid_no` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_address` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `mobile_no` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `address` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `bookings` (
 -- Dumping data for table hb.bookings: ~1 rows (approximately)
 /*!40000 ALTER TABLE `bookings` DISABLE KEYS */;
 INSERT INTO `bookings` (`id`, `reg_no`, `reason`, `hall_room`, `description`, `event_time`, `no_of_guests`, `chief_guest`, `main_guest`, `chair_of_the_event`, `applicant_name`, `nid_no`, `id_type`, `email_address`, `mobile_no`, `address`, `status`, `created_at`, `updated_at`) VALUES
-	(1, '1517137829', 'movie', 'shoukot-osman', 'Demo', 'full-day', 500, 'Demo1', 'Demo2', 'Demo3', 'Neher', '12345612365456321', 'nid', 'neher@gmial.com', '01784255196', 'Demo', 2, '2018-01-28 17:10:29', '2018-01-28 17:20:03');
+	(1, '1517137829', 'movie', 'sufia-kamal', 'Demo', 'full-day', 500, 'Demo1', 'Demo2', 'Demo3', 'Neher', '12345612365456321', 'nid', 'neher@gmial.com', '01784191196', 'Demo', 2, '2018-01-28 17:10:29', '2018-01-28 17:20:03');
 /*!40000 ALTER TABLE `bookings` ENABLE KEYS */;
 
 -- Dumping structure for table hb.messages
@@ -59,13 +59,13 @@ CREATE TABLE IF NOT EXISTS `messages` (
 -- Dumping data for table hb.messages: ~1 rows (approximately)
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
 INSERT INTO `messages` (`id`, `name`, `mobile`, `email`, `subject`, `message`, `read`, `created_at`, `updated_at`) VALUES
-	(1, 'Neher', '01784255196', 'neher@gmail.com', 'test', 'Demo', 1, '2018-01-28 17:21:23', '2018-01-28 17:22:09');
+	(1, 'Neher', '01784191196', 'neher@gmail.com', 'test', 'Demo', 1, '2018-01-28 17:21:23', '2018-01-28 17:22:09');
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 
 -- Dumping structure for table hb.migrations
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -86,9 +86,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- Dumping structure for table hb.notifications
 CREATE TABLE IF NOT EXISTS `notifications` (
   `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `notifiable_id` int(10) unsigned NOT NULL,
-  `notifiable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `notifiable_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `data` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `read_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -170,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `role` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'admin',
+  `role` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'admin',
   `active` tinyint(1) NOT NULL DEFAULT 1,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,

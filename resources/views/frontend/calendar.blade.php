@@ -12,7 +12,7 @@
 		{{ 
 		language(
 			'See the available hall/seminar rooms before booking',
-			'বুকিংয়ের পূর্বে কবে কোন হল/সেমিনার কক্ষের বুকিং আছে তা দেখে নিন'
+			'বুকিংয়ের পূর্বে কবে কোন গ্যালারি/সেমিনার কক্ষের বুকিং আছে তা দেখে নিন'
 		)
 		}}
 	</h5>
@@ -26,7 +26,7 @@
 				<p style="margin-bottom: 16px;">
 					<select name="room" id="" style="height: 35px; font-size: 1.1em;">
 						<option value="all" {{ Request::input('room') == 'all' ?'selected' : '' }}>
-							{{ language('All Hall/Seminar Rooms', 'সকল হল/সেমিনার কক্ষ') }}
+							{{ language('All Hall/Seminar Rooms', 'সকল গ্যালারি/সেমিনার কক্ষ') }}
 						</option>
 						@foreach(allRoomTypes() as $key => $room)
 						<option value="{{ $key }}" {{ Request::input('room') == $key ?'selected' : '' }}>
